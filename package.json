@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "watch": "babel src -d dist --copy-files && node dist/server.js",
+    "dev": "nodemon --transpile-only --inspect --watch src --exec npm run watch"
+  },
   "devDependencies": {
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
